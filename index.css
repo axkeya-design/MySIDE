@@ -1,0 +1,72 @@
+body {
+  background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/22645.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 10;
+  height: 1980vh;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  background: linear-gradient(90deg, #ff004c, #ffae00, #00d9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0 0 10px #ff004c, 0 0 20px #ffae00, 0 0 30px #00d9ff;
+  
+  margin-top: 50px;
+}
+
+iframe {
+  border: 3px solid #ff004c;
+  border-radius: 16px;
+  box-shadow:
+    0 0 20px #ff004c,
+    0 0 40px #ffae00,
+    0 0 60px #00d9ff;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+iframe:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 30px #ff004c,
+    0 0 60px #ffae00,
+    0 0 90px #00d9ff;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 72px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: #ffffff;
+  
+  background: linear-gradient(90deg, #ff004c, #ffae00, #00d9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  text-shadow:
+    0 0 10px #ff004c,
+    0 0 20px #ffae00,
+    0 0 30px #00d9ff;
+
+  margin: 40px 0;
+}
