@@ -5,7 +5,8 @@ body {
   background-attachment: fixed;
   background-position: center;
   margin: 10;
-  height: 3000vh;
+  height: 2000vh;
+  padding-bottom: 200px;
 }
 
 h2 {
