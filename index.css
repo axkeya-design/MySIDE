@@ -1,0 +1,77 @@
+body {
+	background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/22645.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        color: white;
+}
+
+h1 {
+  	font-family: 'Orbitron', sans-serif;
+	font-size: 60px;
+  	text-align: center;
+  	text-shadow:
+  	  0 0 10px #ff004c,
+  	  0 0 20px #ff004c,
+  	  0 0 40px #ff004c,
+  	  0 0 80px #ff004c;
+  	letter-spacing: 1px;
+  	margin-top: 40px;
+  	text-transform: uppercase;
+}
+
+.placeholder {
+	font-family: 'Orbitron', sans-serif;	
+	font-size: 60px;
+	text-align: center;
+	margin-top: 250px;	
+}
+
+.player {
+	flex: 1; 
+	width: 800px;
+	height: 600px;
+    	border-radius: 10px;
+	background-color: black;
+	border: 2px solid red;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.place {
+	display: flex;
+	max-width: 1200px;
+	margin: 50px auto; 
+	gap: 20px; 
+}
+
+.episode-list {
+	width: 250px;
+    	background-color: #111;    
+    	padding: 15px;
+    	border-radius: 10px;
+	border: 2px solid red;
+    	overflow-y: auto;          
+    	height: 450px;
+}
+
+.episode-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.episode-list li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.episode-list li:hover {
+    background-color: #555;
+}
