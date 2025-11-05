@@ -11,55 +11,15 @@ let episodesURL = [
     "9e5df95c252bf0c264690f45446bfacf", // 10
 ];
 
-// Исправляем ошибки в обработчиках (были неправильные номера серий)
-document.getElementById("item1").addEventListener("click", function() {
-    updatePlayer(0);
-});
-
-document.getElementById("item2").addEventListener("click", function() {
-    updatePlayer(1);
-});
-
-document.getElementById("item3").addEventListener("click", function() {
-    updatePlayer(2);
-});
-
-document.getElementById("item4").addEventListener("click", function() {
-    updatePlayer(3);
-});
-
-document.getElementById("item5").addEventListener("click", function() {
-    updatePlayer(4);
-});
-
-document.getElementById("item6").addEventListener("click", function() {
-    updatePlayer(5);
-});
-
-document.getElementById("item7").addEventListener("click", function() {
-    updatePlayer(6);
-});
-
-document.getElementById("item8").addEventListener("click", function() {
-    updatePlayer(7);
-});
-
-document.getElementById("item9").addEventListener("click", function() {
-    updatePlayer(8);
-});
-
-document.getElementById("item10").addEventListener("click", function() {
-    updatePlayer(9);
-});
-
+// Функция для обновления плеера и подсветки
 function updatePlayer(selection) {
     let void_id = episodesURL[selection];
     let player = document.getElementById("player");
     
-    // Очищаем предыдущий контент
+    // Очищаем контент
     player.innerHTML = '';
     
-    // Создаем iframe
+    // Создаём iframe
     let iframe = document.createElement('iframe');
     iframe.width = "100%";
     iframe.height = "100%";
@@ -69,4 +29,22 @@ function updatePlayer(selection) {
     iframe.allowFullscreen = true;
     
     player.appendChild(iframe);
+
+    // Убираем класс active у всех
+    document.querySelectorAll('.episode-list li').forEach(li => {
+        li.classList.remove('active');
+    });
+
+    // Добавляем active к текущей
+    document.getElementById(`item${selection + 1}`).classList.add('active');
 }
+
+// Привязываем события
+for (let i = 1; i <= 10; i++) {
+    document.getElementById(`item${i}`).addEventListener("click", function() {
+        updatePlayer(i - 1);
+    });
+}
+
+// По умолчанию — первая серия
+window.onload = () => updatePlayer(0);
