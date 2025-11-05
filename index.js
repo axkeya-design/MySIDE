@@ -38,6 +38,33 @@ document.getElementById("item5").addEventListener("click", function() {
   updatePlayer();
 });
 
+document.getElementById("item6").addEventListener("click", function() {
+  selection = 4;
+  updatePlayer();
+});
+
+document.getElementById("item7").addEventListener("click", function() {
+  selection = 4;
+  updatePlayer();
+});
+
+document.getElementById("item8").addEventListener("click", function() {
+  selection = 4;
+  updatePlayer();
+});
+
+document.getElementById("item9").addEventListener("click", function() {
+  selection = 4;
+  updatePlayer();
+});
+
+document.getElementById("item10").addEventListener("click", function() {
+  selection = 4;
+  updatePlayer();
+});
+
+
+
 function updatePlayer() {
   let void_id = episodesURL[selection];
   document.getElementById("player").innerHTML = `
