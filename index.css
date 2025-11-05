@@ -1,15 +1,19 @@
-html, body {
-  height: 100%;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
 }
 
 body {
-  background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/22645.jpg');
-  background-size: cover;         /* Заполняет весь экран */
-  background-repeat: no-repeat;   /* Без повторения */
-  background-position: center;    /* Центрирует */
-  background-attachment: fixed;   /* Фон не двигается при прокрутке */
+  min-height: 100vh; /* на всю высоту окна */
+  background: url('https://4kwallpapers.com/images/walls/thumbs_3t/22645.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
 }
 
 h1 {
