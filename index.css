@@ -32,11 +32,6 @@ body::before {
 h1 {
     font-size: 4.5rem;
     text-align: center;
-    text-shadow:
-        0 0 10px #ff0000,
-        0 0 20px #ff0000,
-        0 0 40px #ff0000,
-        0 0 80px #ff0000;
     letter-spacing: 2px;
     margin: 30px 0;
     text-transform: uppercase;
